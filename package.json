@@ -1,7 +1,7 @@
 {
   "name": "elementary",
   "version": "1.0.0",
-  "description": "A sass version of normalize.css",
+  "description": "Elementary css styles based on normalize.css",
   "main": "dist/elementary.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,7 +1,7 @@
 {
   "name": "elementary",
-  "version": "0.1.0",
-  "description": "A sass version of normlize.css",
+  "version": "1.0.0",
+  "description": "Elementary css styles based on normalize.css",
   "main": "dist/elementary.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,6 +21,9 @@
     "url": "https://github.com/absolux/elementary/issues"
   },
   "homepage": "https://github.com/absolux/elementary#readme",
+  "dependencies": {
+    "normalize.css": "^6.0.0"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",

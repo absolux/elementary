@@ -1,14 +1,7 @@
 
 html {
-  // Correct the line height in all browsers
-  line-height: 1.15;
-  
   // Change from `box-sizing: content-box`
   box-sizing: border-box;
-  
-  // Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
   
   // Setting @viewport causes scrollbars to overlap content in IE11 and Edge
   -ms-overflow-style: scrollbar;
@@ -26,22 +19,6 @@ html {
 body {
   // Remove the margin in all browsers (opinionated)
   margin: 0;
-}
-
-main,
-details {
-  // Add the correct display in IE
-  display: block;
-}
-
-summary {
-  // Add the correct display in all browsers
-  display: list-item;
-}
-
-template {
-  // Add the correct display in IE
-  display: none;
 }
 
 [tabindex="-1"]:focus {

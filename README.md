@@ -1,2 +1,3 @@
-# elementary
-A sass version of normlize.css
+## Introduction
+
+Elementary css styles based on normalize.css

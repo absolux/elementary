@@ -22,15 +22,12 @@ html {
 body {
   // Remove the margin in all browsers (opinionated)
   margin: 0;
-}
-
-[tabindex="-1"]:focus {
-  // Suppress the focus outline on elements that cannot be accessed via keyboard.
-  // This prevents an unwanted focus outline from appearing around elements that
-  // might still respond to pointer events.
-  //
-  // Credit: https://github.com/suitcss/base
-  outline: none !important;
+  
+  color: $text-color;
+  font-size: $font-size-base;
+  background-color: $body-bg;
+  font-family: $font-family-base;
+  line-height: $line-height-base;
 }
 
 [hidden] {
@@ -39,6 +36,16 @@ body {
   // 
   // Credit: https://purecss.io/
   display: none !important;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 a,
@@ -55,10 +62,24 @@ textarea,
   // In particular, unlike most other browsers, IE11+Edge on Windows 10 on touch devices and IE Mobile 10-11
   // DON'T remove the click delay when `<meta name="viewport" content="width=device-width">` is present.
   // However, they DO support removing the click delay via `touch-action: manipulation`.
+  //
   // See:
   // * https://v4-alpha.getbootstrap.com/content/reboot/#click-delay-optimization-for-touch
   // * https://patrickhlauke.github.io/touch/tests/results/#suppressing-300ms-delay
   // * https://medium.com/@adactio/delay-a9df9edceef3
   // * http://caniuse.com/#feat=css-touch-action
   touch-action: manipulation;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
 }
